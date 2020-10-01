@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
-import { Home } from './styles';
 import Hero from '../sections/Hero/index';
 
 function LeCode() {
