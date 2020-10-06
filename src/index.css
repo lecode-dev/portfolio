@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -11,6 +12,7 @@ body {
   background-color: rgb(26, 27, 28);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  letter-spacing: 1px;
 }
 
 body::-webkit-scrollbar {
@@ -21,4 +23,10 @@ button {
   border: none;
   cursor: pointer;
   outline: 0px;
+}
+
+ul{list-style: none;}
+
+a{
+  text-decoration: none;
 }
