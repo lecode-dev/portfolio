@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e5b4e4ea.chunk.css",
+    "main.js": "/static/js/main.2b2d0ac3.chunk.js",
+    "main.js.map": "/static/js/main.2b2d0ac3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.90a8f435.js",
+    "runtime-main.js.map": "/static/js/runtime-main.90a8f435.js.map",
+    "static/js/2.8c93e819.chunk.js": "/static/js/2.8c93e819.chunk.js",
+    "static/js/2.8c93e819.chunk.js.map": "/static/js/2.8c93e819.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f6877519b21493b1e4e88a92cc814042.js": "/precache-manifest.f6877519b21493b1e4e88a92cc814042.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e5b4e4ea.chunk.css.map": "/static/css/main.e5b4e4ea.chunk.css.map",
+    "static/js/2.8c93e819.chunk.js.LICENSE.txt": "/static/js/2.8c93e819.chunk.js.LICENSE.txt",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.822718b1.svg",
+    "static/media/contact-img.jpeg": "/static/media/contact-img.b69d9e14.jpeg",
+    "static/media/css-icon.svg": "/static/media/css-icon.d7c2c7ba.svg",
+    "static/media/github-logo.svg": "/static/media/github-logo.25388c4e.svg",
+    "static/media/html-icon.svg": "/static/media/html-icon.5aec8024.svg",
+    "static/media/instagram-logo.svg": "/static/media/instagram-logo.ff38c038.svg",
+    "static/media/js-icon.svg": "/static/media/js-icon.450dc8ea.svg",
+    "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.db7d65d0.svg",
+    "static/media/node-icon.svg": "/static/media/node-icon.67eddc43.svg",
+    "static/media/proj1.jpg": "/static/media/proj1.0ac38da8.jpg",
+    "static/media/proj3.jpg": "/static/media/proj3.71d29331.jpg",
+    "static/media/proj4.jpg": "/static/media/proj4.7d184e34.jpg",
+    "static/media/proj5.jpg": "/static/media/proj5.572f3029.jpg",
+    "static/media/python-icon.svg": "/static/media/python-icon.6141ce28.svg",
+    "static/media/react-icon.svg": "/static/media/react-icon.01df4bff.svg",
+    "static/media/sass-icon.svg": "/static/media/sass-icon.b459bebf.svg",
+    "static/media/twitter-logo.svg": "/static/media/twitter-logo.d7bc52a2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90a8f435.js",
+    "static/js/2.8c93e819.chunk.js",
+    "static/css/main.e5b4e4ea.chunk.css",
+    "static/js/main.2b2d0ac3.chunk.js"
+  ]
+}
