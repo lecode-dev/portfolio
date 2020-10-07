@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hero } from './styles';
-import { Paragraph } from '../ReusableStyling/styles';
+import { Paragraph } from '../Shared/styles';
 import Button from '../../components/Button';
 
 function HeroMain() {

@@ -1,43 +1,34 @@
 import React from 'react';
 import { CustomSmallButton } from '../Button';
 import { Project } from './styles';
-import Img from '../../assets/images/proj1.jpg';
+import ArrowIcon from '../../assets/images/arrow-right.svg';
 
-// import { Container } from './styles';
+function ProjectTest({websiteName, websiteDesc, websiteImg, techArray, side, firstElement}) {
+  const createList = () => {
+    let rows = [];
 
-function ProjectTest({
-  websiteName,
-  websiteDesc,
-  websiteImg,
-  techArray,
-  side,
-}) {
+    for(let i = 0; i < techArray.length; i++){
+        rows.push(<li key={i}><img src={ArrowIcon} alt="Arrow icon"/>{techArray[i]}</li>)
+    }; 
+
+    return rows;
+  }
+
   return (
-    <>
-      <Project side={side}>
-        <img
-          // onMouseOver={descIn}
-          // onMouseOut={descOut}
-          src={Img}
-          alt="Project 1"
-        />
+      <Project side={side} firstElement={firstElement}>
+        <img src={websiteImg} alt="Project 1"/>
+
         <div>
           <span>Featured Project</span>
-          <h3>Title</h3>
-          <p>Desc</p>
+          <h3>{websiteName}</h3>
+          <p>{websiteDesc}</p>
           <ul>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
+            {createList()}
           </ul>
           <CustomSmallButton title="Check Website" />
         </div>
       </Project>
-
-      {}
-    </>
   );
-}
+};
 
 export default ProjectTest;

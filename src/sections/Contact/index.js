@@ -3,8 +3,8 @@ import { Contact } from './styles';
 import Button from '../../components/Button';
 import ContactImg from '../../assets/images/contact-img.jpeg';
 import Form from '../../components/ContactForm/';
-import { SessionTitle } from '../ReusableStyling/styles';
-import { Paragraph } from '../ReusableStyling/styles';
+import { SessionTitle } from '../Shared/styles';
+import { Paragraph } from '../Shared/styles';
 
 function ContactSession() {
     const showForm = () => {

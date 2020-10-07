@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const Team = styled.section`
-    height: 100vh;
     width: 80%;
-    margin: 4% auto 0 auto;
+    margin: 0 auto;
     padding: 4.5% 0;
-    border-bottom: 1px solid rgb(0, 179, 118);
+    border-top: 1px solid rgb(0, 179, 118);
 
     div{
         height: 90%;
@@ -29,13 +28,13 @@ export const Members = styled.div`
         filter: grayscale(0);
         border: 1px solid rgb(0, 179, 118);
         width: 91%;
-        height: 41%;
+        height: 185px;
     }
 
     .memberImg{
         width: 90%;
-        height: 40%;
-        margin: 0 auto;
+        height: 180px;
+        margin: 0 auto 20px auto;
         filter: grayscale(1);
         opacity: .8;
         transition: all .2s;
@@ -50,12 +49,16 @@ export const Members = styled.div`
         h4{
             color: rgb(0, 179, 118);
             font-weight: 400;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-family: 'Roboto Mono', monospace;
             margin-bottom: 7px;
         }
 
-        span{font-size: 15px;}
+        span{font-size: 0.938rem;}
+    }
+
+    p{
+        margin: 25px 0;
     }
 
     .logos{

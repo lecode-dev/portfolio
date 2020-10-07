@@ -12,7 +12,7 @@ export const ContactForm = styled.form`
         color: rgb(0, 179, 118);
         font-family: 'Roboto Mono', monospace;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 1.563rem;
         text-align: center;
     }
 
@@ -76,7 +76,7 @@ export const ContactForm = styled.form`
         width: 70%;
         margin: 0 auto;
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 1rem;
         border: 1px solid rgb(0, 179, 118);
         color: rgb(0, 179, 118);
         background-color: rgba(0, 179, 118, 0.1);

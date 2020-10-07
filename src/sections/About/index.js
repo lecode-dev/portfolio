@@ -1,7 +1,7 @@
 import React from 'react';
 import { About } from './styles';
-import { SessionTitle } from '../ReusableStyling/styles';
-import { Paragraph } from '../ReusableStyling/styles';
+import { SessionTitle } from '../Shared/styles';
+import { Paragraph } from '../Shared/styles';
 import ArrowImg from '../../assets/images/arrow-right.svg';
 import JSIcon from '../../assets/images/js-icon.svg';
 import HTMLIcon from '../../assets/images/html-icon.svg';
@@ -24,7 +24,7 @@ function AboutSession() {
     return (
         <About>
             <div className="div-left">
-                <SessionTitle><span>0001.</span>About Us</SessionTitle>
+                <SessionTitle><span>0001.</span> About Us</SessionTitle>
 
                 <Paragraph>Hey!!! We're <span>LeCode</span>, a software developer team located in Montes Claros, Brazil that builds websites and applications for you.</Paragraph>
 

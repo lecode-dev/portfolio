@@ -18,7 +18,7 @@ export const Container = styled.header`
 
   button {
     padding: 12px 10px;
-    font-size: 13px;
+    font-size: 0.875rem;
     color: #fff;
     transition: all .2s;
     margin-left: 20px;
@@ -26,9 +26,9 @@ export const Container = styled.header`
   }
 
   button > span{
-    color: rgb(0, 179, 118);
+    color: rgb(231, 76, 60);
     margin-right: 10px;
   }
 
-  button:hover{color: rgb(0, 179, 118);}
+  button:hover{color: rgb(231, 76, 60);}
 `;
