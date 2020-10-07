@@ -2,14 +2,14 @@ import React from 'react';
 import { Projects } from './styles';
 import Project from '../../components/Project';
 import { SessionTitle } from '../Shared/styles';
-import Proj1 from '../../assets/images/proj1.jpg';
-import Proj2 from '../../assets/images/proj5.jpg';
+import Proj1 from '../../assets/images/proj1.png';
+import Proj2 from '../../assets/images/proj2.png';
 import Proj3 from '../../assets/images/proj3.jpg';
 import Proj4 from '../../assets/images/proj4.jpg';
 
 function ProjectsSession() {
     return (
-        <Projects>
+        <Projects id="projects">
             <SessionTitle><span>0010.</span> Some Of Our Projects</SessionTitle>
 
             <Project websiteName="Sport FIT Gym" websiteDesc="With Sport FIT you can schedule sessions of sports, such as Pilates, Yoga, Spinning and many more." websiteImg={Proj1} techArray={['HTML', 'CSS', 'React', 'Node.js']} side="right" firstElement/>

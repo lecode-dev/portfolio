@@ -11,6 +11,7 @@ import PythonIcon from '../../assets/images/python-icon.svg';
 import CSSIcon from '../../assets/images/css-icon.svg';
 import ReactIcon from '../../assets/images/react-icon.svg';
 import AboutImg from '../../components/AboutImg';
+import { Link } from 'react-scroll';
 
 function AboutSession() {
     const listItem = (langName ,imgSrc, imgAlt) => (
@@ -22,13 +23,13 @@ function AboutSession() {
     );
 
     return (
-        <About>
+        <About id="about">
             <div className="div-left">
                 <SessionTitle><span>0001.</span> About Us</SessionTitle>
 
                 <Paragraph>Hey!!! We're <span>LeCode</span>, a software developer team located in Montes Claros, Brazil that builds websites and applications for you.</Paragraph>
 
-                <Paragraph>We are 4 friends (<button href="#">@Emerson</button>, <button href="#">@Erick</button>, <button href="#">@Lucas</button>, <button href="#">@Mari</button>) that got together to provide you the best freelancer experience regarding high speed, high quality and good communication.</Paragraph>
+                <Paragraph>We are 4 friends (<Link to="team" duration={1000} offset={-70} smooth>@Emerson</Link>, <Link to="team" duration={1000} offset={-70} smooth>@Erick</Link>, <Link to="team" duration={1000} offset={-70} smooth>@Lucas</Link>, <Link to="team" duration={1000} offset={-70} smooth>@Mari</Link>) that got together to provide you the best freelancer experience regarding high speed, high quality and good communication.</Paragraph>
                 
                 <Paragraph>Visit our <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Github profile</a> for code samples and some open source projects that we've built.</Paragraph>
 

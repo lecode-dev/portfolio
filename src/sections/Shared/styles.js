@@ -47,13 +47,14 @@ export const Paragraph = styled.p`
     font-size: 1rem;
     color: #fff;
 
-    button, a{
+    button, a, Link{
         color: rgb(0, 179, 118);
         transition: all .2s;
         position: relative;
         font-family: 'Roboto Mono', monospace;
         background-color: transparent;
         font-size: 1rem;
+        cursor: pointer;
 
         :hover:before{
             visibility: visible;

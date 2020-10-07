@@ -13,7 +13,7 @@ function ContactSession() {
     };
 
     return (
-        <Contact>
+        <Contact id="contact">
             <div className="div-left">
                 <SessionTitle><span>0100.</span> Get In Touch With Us</SessionTitle>
 

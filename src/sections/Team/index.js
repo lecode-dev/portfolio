@@ -33,7 +33,7 @@ function TeamSession() {
     )
 
     return(
-        <Team>
+        <Team id="team">
             <SessionTitle><span>0011.</span> Get to Know Us</SessionTitle>
 
             <div>

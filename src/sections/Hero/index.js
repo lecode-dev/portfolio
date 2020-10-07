@@ -5,7 +5,7 @@ import Button from '../../components/Button';
 
 function HeroMain() {
   return (
-    <Hero>
+    <Hero id="hero">
       <p>Hey there, we are</p>
 
       <h2>LeCode</h2>

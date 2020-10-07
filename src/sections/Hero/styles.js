@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Hero = styled.section`
     width: 80%;
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
     padding: 4.5% 0;
 
     p:first-of-type{
