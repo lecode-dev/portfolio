@@ -45,4 +45,30 @@ export const About = styled.section`
             transition: all .2s;
         }
     }
+
+
+    // Media Queries
+    @media (max-width: 1024px){
+        .div-left{width: 100%;}
+
+        .div-right{display: none;}
+
+        h2{font-size: 1.8rem;}
+
+        p{line-height: 27px;}
+    }
+
+    @media (max-width: 769px){
+        h2{margin-top: 30px;}
+
+        .tech-list{margin-bottom: 30px};
+    }
+
+    @media (max-width: 580px){
+        .tech-list{width: 90%;}
+    }
+
+    @media (max-width: 360px){
+        .tech-list{width: 110%;}
+    }
 `

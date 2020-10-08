@@ -35,4 +35,16 @@ export const Contact = styled.section`
             }
         }
     }
+
+
+    // Media Queries
+    @media (max-width: 769px){
+        .div-left{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .div-right{display: none;}
+    }
 `

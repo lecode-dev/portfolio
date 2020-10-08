@@ -7,4 +7,16 @@ export const Projects = styled.section`
     color: white;
     cursor: default;
     border-top: 1px solid rgb(0, 179, 118);
+
+
+    // Media Queries
+    @media (max-width: 1024px){
+        h2{font-size: 1.8rem;}
+    }
+
+    @media (max-width: 769px){
+        margin-bottom: 30px;
+
+        h2{margin-top: 30px;}
+    }
 `

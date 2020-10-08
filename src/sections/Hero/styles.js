@@ -33,4 +33,20 @@ export const Hero = styled.section`
         font-family: 'Roboto Mono', monospace;
         letter-spacing: 0;
     }
+
+
+    // Media Queries
+    @media (max-width: 1024px){
+        p:last-of-type{width: 85%;}
+
+        h3{width: 90%;}
+    }
+
+    @media (max-width: 769px){
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 480px){
+        p:last-of-type{width: 100%;}
+    }
 `

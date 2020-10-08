@@ -7,9 +7,31 @@ export const Team = styled.section`
     border-top: 1px solid rgb(0, 179, 118);
 
     div{
-        height: 90%;
         display: flex;
         position: relative;
+    }
+
+
+    // Media Queries
+    @media (max-width: 1024px){
+        h2{font-size: 1.8rem;}
+    }
+
+    @media(max-width: 768px){
+        h2{margin-top: 30px;} 
+
+        div{
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media(max-width: 480px){
+        div{
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 `
 
@@ -27,9 +49,9 @@ export const Members = styled.div`
         opacity: 1;
         filter: grayscale(0);
         border: 1px solid rgb(0, 179, 118);
-        width: 91%;
-        height: 185px;
     }
+
+    :hover span{color: rgb(231, 76, 60);}
 
     .memberImg{
         width: 90%;
@@ -41,45 +63,78 @@ export const Members = styled.div`
         border: 1px solid transparent;
     }
 
-    .title{
+    .info{
         display: flex;
         flex-direction: column;
-        height: 10%;
 
-        h4{
-            color: rgb(0, 179, 118);
-            font-weight: 400;
-            font-size: 1.125rem;
-            font-family: 'Roboto Mono', monospace;
-            margin-bottom: 7px;
-        }
-
-        span{font-size: 0.938rem;}
-    }
-
-    p{
-        margin: 25px 0;
-    }
-
-    .logos{
-        display: flex;
-        justify-content: space-around;
-        height: 10%;
-        width: 80%;
-        margin: 0 auto;
-
-        a{
-            margin-top: 5px;
-            transition: all .2s;
-
-            :hover{margin-top: 0;}
-
-            img{
-                width: 20px;
-                opacity: .5;
+        .title{
+            display: flex;
+            flex-direction: column;
+            height: 10%;
     
-                :hover{opacity: 1;}
+            h4{
+                color: rgb(0, 179, 118);
+                font-weight: 400;
+                font-size: 1.125rem;
+                font-family: 'Roboto Mono', monospace;
+                margin-bottom: 7px;
             }
+    
+            span{
+                font-size: 0.938rem;
+                transition: all .2s;
+            }
+        }
+    
+        p{margin: 25px 0;}
+    
+        .logos{
+            display: flex;
+            justify-content: space-around;
+            height: 10%;
+            width: 80%;
+            margin: 0 auto;
+    
+            a{
+                margin-top: 5px;
+                transition: all .2s;
+    
+                :hover{margin-top: 0;}
+    
+                img{
+                    width: 20px;
+                    opacity: .5;
+        
+                    :hover{opacity: 1;}
+                }
+            }
+        }
+    }
+
+    
+    // Media Queries
+    @media(max-width: 768px){
+        width: 100%;
+        display: flex;
+
+        .memberImg{width: 50%;}
+
+        div{
+            .logos{
+                flex-direction: row;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+    @media(max-width: 480px){
+        p{margin: 10px 0;}
+
+        .memberImg{width: 100%;}
+
+        div{
+            width: 100%;
+            margin-bottom: 30px;
         }
     }
 `

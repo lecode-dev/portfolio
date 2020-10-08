@@ -3,7 +3,7 @@ import { CustomSmallButton } from '../Button';
 import { Project } from './styles';
 import ArrowIcon from '../../assets/images/arrow-right.svg';
 
-function ProjectTest({websiteName, websiteDesc, websiteImg, techArray, side, firstElement}) {
+function ProjectTest({websiteName, websiteDesc, websiteImg, techArray, side, firstElement, websiteLink}) {
   const createList = () => {
     let rows = [];
 
@@ -20,12 +20,17 @@ function ProjectTest({websiteName, websiteDesc, websiteImg, techArray, side, fir
 
         <div>
           <span>Featured Project</span>
-          <h3>{websiteName}</h3>
+          <a href={websiteLink} target="_blank">
+            <h3>{websiteName}</h3>
+          </a>
           <p>{websiteDesc}</p>
           <ul>
             {createList()}
           </ul>
-          <CustomSmallButton title="Check Website" />
+
+          <a href={websiteLink} target="_blank">
+            <CustomSmallButton title="Check Website" className='small-button'/>
+          </a>
         </div>
       </Project>
   );

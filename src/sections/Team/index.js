@@ -16,31 +16,33 @@ function TeamSession() {
         <Members>
             <img className="memberImg" src={memberImg} alt="Member"/>
 
-            <div className="title">
-                <h4>{memberName}</h4>
-                <span>{job}</span>
-            </div>
+            <div className="info">
+                <div className="title">
+                    <h4>{memberName}</h4>
+                    <span>{job}</span>
+                </div>
 
-            <p>{txt}</p>
+                <p>{txt}</p>
 
-            <div className="logos">
-                <a href={instagramLink} target="_blank" rel="noopener noreferrer"><img src={InstagramLogo} alt="Instagram Logo"/></a>
-                <a href={twitterLink} target="_blank" rel="noopener noreferrer"><img src={TwitterLogo} alt="Twitter Logo"/></a>
-                <a href={linkedinLink} target="_blank" rel="noopener noreferrer"><img src={LinkedinLogo} alt="Linkedin Logo"/></a>
-                <a href={githubLink} target="_blank" rel="noopener noreferrer"><img src={GithubLogo} alt="Github Logo"/></a>
+                <div className="logos">
+                    <a href={instagramLink} target="_blank" rel="noopener noreferrer"><img src={InstagramLogo} alt="Instagram Logo"/></a>
+                    <a href={twitterLink} target="_blank" rel="noopener noreferrer"><img src={TwitterLogo} alt="Twitter Logo"/></a>
+                    <a href={linkedinLink} target="_blank" rel="noopener noreferrer"><img src={LinkedinLogo} alt="Linkedin Logo"/></a>
+                    <a href={githubLink} target="_blank" rel="noopener noreferrer"><img src={GithubLogo} alt="Github Logo"/></a>
+                </div>
             </div>
         </Members>
     )
 
     return(
         <Team id="team">
-            <SessionTitle><span>0011.</span> Get to Know Us</SessionTitle>
+            <SessionTitle><span>0011.</span>Get to Know Us</SessionTitle>
 
             <div>
-                {member(Member1 ,'Emerson Lopes', 'Front End Developer', 'You can relay on our amazing features list and also our customer services will be great experience.', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
-                {member(Member2 ,'Erick William', 'Back End Developer', 'You can relay on our amazing features list and also our customer services will be great experience.', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
-                {member(Member3 ,'Lucas Filipe', 'Front End Developer', 'You can relay on our amazing features list and also our customer services will be great experience.', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
-                {member(Member4 ,'Marianne Matos', 'Front End Developer', 'You can relay on our amazing features list and also our customer services will be great experience.', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
+                {member(Member1 ,'Emerson Lopes', 'Front End Developer', 'I’m a web developer, who speaks English, Portuguese and a little bit of French and is studying Information Systems at the State University of Montes Claros. Basically, I’m just someone who really loves technology and learning new things :)', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
+                {member(Member2 ,'Erick William', 'Back End Developer', 'I’m a web developer, who speaks English, Portuguese and a little bit of French and is studying Information Systems at the State University of Montes Claros. Basically, I’m just someone who really loves technology and learning new things :)', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
+                {member(Member3 ,'Lucas Filipe', 'Front End Developer', 'I’m a web developer, who speaks English, Portuguese and a little bit of French and is studying Information Systems at the State University of Montes Claros. Basically, I’m just someone who really loves technology and learning new things :)', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
+                {member(Member4 ,'Marianne Matos', 'Web Developer', 'I’m a web developer, who speaks English, Portuguese and a little bit of French and is studying Information Systems at the State University of Montes Claros. Basically, I’m just someone who really loves technology and learning new things :)', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
             </div>
         </Team>
     )
