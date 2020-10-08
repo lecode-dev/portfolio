@@ -12,38 +12,93 @@ import LinkedinLogo from '../../assets/images/linkedin-logo.svg';
 import GithubLogo from '../../assets/images/github-logo.svg';
 
 function TeamSession() {
-    const member = (memberImg ,memberName, job, txt, instagramLink, twitterLink, linkedinLink, githubLink) => (
-        <Members>
-            <img className="memberImg" src={memberImg}/>
+  const member = (
+    memberImg,
+    memberName,
+    job,
+    txt,
+    instagramLink,
+    twitterLink,
+    linkedinLink,
+    githubLink
+  ) => (
+    <Members>
+      <img className="memberImg" alt="" src={memberImg} />
 
-            <div className="title">
-                <h4>{memberName}</h4>
-                <span>{job}</span>
-            </div>
+      <div className="title">
+        <h4>{memberName}</h4>
+        <span>{job}</span>
+      </div>
 
-            <p>{txt}</p>
+      <p>{txt}</p>
 
-            <div className="logos">
-                <a href={instagramLink} target="_blank"><img src={InstagramLogo} alt="Instagram Logo"/></a>
-                <a href={twitterLink} target="_blank"><img src={TwitterLogo} alt="Twitter Logo"/></a>
-                <a href={linkedinLink} target="_blank"><img src={LinkedinLogo} alt="Linkedin Logo"/></a>
-                <a href={githubLink} target="_blank"><img src={GithubLogo} alt="Github Logo"/></a>
-            </div>
-        </Members>
-    )
+      <div className="logos">
+        <a href={instagramLink} target="_blank" rel="noopener noreferrer">
+          <img src={InstagramLogo} alt="Instagram Logo" />
+        </a>
+        <a href={twitterLink} target="_blank" rel="noopener noreferrer">
+          <img src={TwitterLogo} alt="Twitter Logo" />
+        </a>
+        <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+          <img src={LinkedinLogo} alt="Linkedin Logo" />
+        </a>
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <img src={GithubLogo} alt="Github Logo" />
+        </a>
+      </div>
+    </Members>
+  );
 
-    return(
-        <Team>
-            <SessionTitle><span>0011.</span> Get to Know Us</SessionTitle>
+  return (
+    <Team>
+      <SessionTitle>
+        <span>0011.</span> Get to Know Us
+      </SessionTitle>
 
-            <div>
-                {member(Member1 ,'Emerson Lopes', 'Front End Developer', 'You can relay on our amazing features list and also our customer services will be great experience.', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
-                {member(Member2 ,'Erick William', 'Back End Developer', 'You can relay on our amazing features list and also our customer services will be great experience.', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
-                {member(Member3 ,'Lucas Lucas', 'Front End Developer', 'You can relay on our amazing features list and also our customer services will be great experience.', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
-                {member(Member4 ,'Marianne Matos', 'Front End Developer', 'You can relay on our amazing features list and also our customer services will be great experience.', 'https://www.instagram.com/', 'https://twitter.com/', 'https://br.linkedin.com/', 'https://github.com/')}
-            </div>
-        </Team>
-    )
+      <div>
+        {member(
+          Member1,
+          'Emerson Lopes',
+          'Front End Developer',
+          'You can relay on our amazing features list and also our customer services will be great experience.',
+          'https://www.instagram.com/',
+          'https://twitter.com/',
+          'https://br.linkedin.com/',
+          'https://github.com/'
+        )}
+        {member(
+          Member2,
+          'Erick William',
+          'Back End Developer',
+          'You can relay on our amazing features list and also our customer services will be great experience.',
+          'https://www.instagram.com/',
+          'https://twitter.com/',
+          'https://br.linkedin.com/',
+          'https://github.com/'
+        )}
+        {member(
+          Member3,
+          'Lucas Lucas',
+          'Front End Developer',
+          'You can relay on our amazing features list and also our customer services will be great experience.',
+          'https://www.instagram.com/',
+          'https://twitter.com/',
+          'https://br.linkedin.com/',
+          'https://github.com/'
+        )}
+        {member(
+          Member4,
+          'Marianne Matos',
+          'Front End Developer',
+          'You can relay on our amazing features list and also our customer services will be great experience.',
+          'https://www.instagram.com/',
+          'https://twitter.com/',
+          'https://br.linkedin.com/',
+          'https://github.com/'
+        )}
+      </div>
+    </Team>
+  );
 }
 
 export default TeamSession;
