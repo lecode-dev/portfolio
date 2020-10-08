@@ -18,7 +18,18 @@ export const Container = styled.header`
     cursor: pointer;
   }
 
-  nav{margin-top: 24px;}
+  .menu-icon{
+    display: none;
+    width: 57px;
+  }
+
+  nav{
+    margin-top: 24px;
+
+    .close-icon{
+      display: none;
+    }
+  }
 
   .nav-link {
     padding: 0 10px;
@@ -36,6 +47,45 @@ export const Container = styled.header`
     span{
       color: rgb(231, 76, 60);
       margin-right: 10px;
+    }
+  }
+
+  @media(max-width: 768px){
+    .menu-icon{
+      display: block;
+    }
+
+    nav{
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      justify-content: space-around;
+      top: -24px;
+      right: 0;
+      background-color: rgb(26, 27, 28);
+      width: 45%;
+      height: ${window.innerHeight}px;
+      box-shadow: -4px -4px 6px rgba(0, 0, 0, .2);
+      margin-top: 0px;
+
+      .close-icon{
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      .nav-link{
+        display: flex;
+        flex-direction: column;
+        // margin-bottom: 100px;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 18px;
+
+        span{
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 `;

@@ -2,6 +2,8 @@ import React from 'react';
 import { Container } from './styles';
 import Logo from '../../assets/images/logo-clean.png';
 import { Link } from 'react-scroll';
+import MenuIcon from '../../assets/images/menu-outline.svg';
+import CloseIcon from '../../assets/images/close-outline.svg';
 
 function Navbar() {
   let prevScrollpos = window.pageYOffset;
@@ -19,13 +21,25 @@ function Navbar() {
   prevScrollpos = currentScrollPos;
   }
 
+  const showNav = () => {
+    document.querySelector('nav').style.display = 'flex';
+  }
+
+  const hideNav = () => {
+    document.querySelector('nav').style.display = 'none';
+  }
+
   return (
     <Container id="menu">
       <Link to="hero" duration={1000} offset={-60} smooth>
         <img src={Logo} alt="Logo"/>
       </Link>
 
+      <img className="menu-icon" src={MenuIcon} alt="Menu icon" onClick={showNav}/>
+
       <nav>
+        <img className="close-icon" src={CloseIcon} alt="Close icon" onClick={hideNav}/>
+
         <Link className="nav-link" to="about" duration={1000} offset={-60} smooth>
           <span>0001.</span>About
         </Link>

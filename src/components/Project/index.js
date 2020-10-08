@@ -20,7 +20,7 @@ function ProjectTest({websiteName, websiteDesc, websiteImg, techArray, side, fir
 
         <div>
           <span>Featured Project</span>
-          <a href={websiteLink} target="_blank">
+          <a href={websiteLink} target="_blank" rel="noopener noreferrer">
             <h3>{websiteName}</h3>
           </a>
           <p>{websiteDesc}</p>
@@ -28,7 +28,7 @@ function ProjectTest({websiteName, websiteDesc, websiteImg, techArray, side, fir
             {createList()}
           </ul>
 
-          <a href={websiteLink} target="_blank">
+          <a href={websiteLink} target="_blank" rel="noopener noreferrer">
             <CustomSmallButton title="Check Website" className='small-button'/>
           </a>
         </div>

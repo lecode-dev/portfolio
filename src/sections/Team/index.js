@@ -5,7 +5,7 @@ import { SessionTitle } from '../Shared/styles';
 import Member1 from '../../assets/images/member1.jpg';
 import Member2 from '../../assets/images/member2.jpg';
 import Member3 from '../../assets/images/member3.jpg';
-import Member4 from '../../assets/images/member4.jpg';
+import Member4 from '../../assets/images/member5.jpg';
 import InstagramLogo from '../../assets/images/instagram-logo.svg';
 import TwitterLogo from '../../assets/images/twitter-logo.svg';
 import LinkedinLogo from '../../assets/images/linkedin-logo.svg';

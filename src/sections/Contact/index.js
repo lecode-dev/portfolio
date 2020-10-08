@@ -2,16 +2,10 @@ import React from 'react';
 import { Contact } from './styles';
 import Button from '../../components/Button';
 import ContactImg from '../../assets/images/contact-img.jpeg';
-import Form from '../../components/ContactForm/';
 import { SessionTitle } from '../Shared/styles';
 import { Paragraph } from '../Shared/styles';
 
 function ContactSession() {
-    // const showForm = () => {
-    //     document.querySelector('form').style.display = 'flex';
-    //     document.querySelector('.contact-img').style.display = 'none';
-    // };
-
     return (
         <Contact id="contact">
             <div className="div-left">
@@ -30,8 +24,6 @@ function ContactSession() {
 
             <div className="div-right">
                 <img src={ContactImg} alt="Web Devolopment" className="contact-img"/>
-
-                {/* <Form/> */}
             </div>  
 
         </Contact>
