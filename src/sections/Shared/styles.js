@@ -43,7 +43,6 @@ export const SessionTitle = styled.h2`
 export const Paragraph = styled.p`
     line-height: 30px;
     margin-bottom: 20px;
-    text-align: justify;
     font-size: 1rem;
     color: #fff;
 

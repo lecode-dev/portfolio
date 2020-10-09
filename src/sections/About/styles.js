@@ -68,6 +68,10 @@ export const About = styled.section`
         .tech-list{width: 90%;}
     }
 
+    @media (max-width: 400px){
+        width: 90%;
+    }
+
     @media (max-width: 360px){
         .tech-list{width: 110%;}
     }

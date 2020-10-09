@@ -29,7 +29,7 @@ export const Team = styled.section`
     @media(max-width: 480px){
         div{
             flex-direction: column;
-            width: 90%;
+            width: 92%;
             margin: 0 auto;
         }
     }
@@ -106,7 +106,8 @@ export const Members = styled.div`
                 img{
                     width: 20px;
                     opacity: .5;
-        
+                    ￼￼
+                    0001.
                     :hover{opacity: 1;}
                 }
             }
@@ -115,11 +116,27 @@ export const Members = styled.div`
 
     
     // Media Queries
+    @media(max-width: 1024px){
+        .memberImg{width: 100%;}
+
+        .info{
+            p{
+                height: 270px;
+            }
+        }
+    }
+    
     @media(max-width: 768px){
         width: 100%;
         display: flex;
 
-        .memberImg{width: 50%;}
+        .memberImg{width: 40%;}
+
+        .info{
+            p{
+                height: 100px;
+            }
+        }
 
         div{
             .logos{
@@ -128,15 +145,31 @@ export const Members = styled.div`
             }
         }
     }
+
+    @media(max-width: 760px){
+        .info{
+            p{
+                height: 200px;
+            }
+        }
+    }
     
     @media(max-width: 480px){
-        p{margin: 10px 0;}
+        .info{
+            p{margin: -10px 0 10px 0;}
+        }
 
-        .memberImg{width: 100%;}
+        .memberImg{width: 70%;}
 
         div{
             width: 100%;
             margin-bottom: 30px;
         }
+    }
+
+    @media (max-width: 400px){
+        width: 90%;
+
+        .memberImg{width: 80%;}
     }
 `

@@ -47,4 +47,8 @@ export const Contact = styled.section`
 
         .div-right{display: none;}
     }
+
+    @media (max-width: 400px){
+        width: 90%;
+    }
 `

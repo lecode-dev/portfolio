@@ -19,4 +19,8 @@ export const Projects = styled.section`
 
         h2{margin-top: 30px;}
     }
+
+    @media (max-width: 400px){
+        width: 90%;
+    }
 `

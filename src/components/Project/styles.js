@@ -178,4 +178,14 @@ export const Project = styled.div`
       margin-top: 40px;
     }
   }
+
+  @media (max-width: 350px){
+    div{
+      ul{
+        li{
+          margin-left: 15px;
+        }
+      }
+    }
+  }
 `;

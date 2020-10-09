@@ -15,7 +15,6 @@ function HeroMain() {
 
       <Paragraph>
         We are a software developer team based in Montes Claros, MG, Brazil specialized in building (and sometimes designing) modern, exceptional, high-quality websites and applications.
-
       </Paragraph>  
 
       <Link to="contact" duration={1000} offset={-60} smooth>

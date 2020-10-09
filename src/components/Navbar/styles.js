@@ -55,6 +55,13 @@ export const Container = styled.header`
       display: block;
     }
 
+    img{
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
     nav{
       display: none;
       flex-direction: column;
@@ -64,7 +71,7 @@ export const Container = styled.header`
       right: 0;
       background-color: rgb(26, 27, 28);
       width: 45%;
-      height: ${window.innerHeight}px;
+      height: ${window.innerHeight + 25}px;
       box-shadow: -4px -4px 6px rgba(0, 0, 0, .2);
       margin-top: 0px;
 

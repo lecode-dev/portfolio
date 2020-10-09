@@ -21,17 +21,18 @@ export const Hero = styled.section`
 
     h2{
         color: #fff;
-        font-size: 3.75rem;
+        font-size: 3.5rem;
     }
 
     h3{
         color: rgb(0, 179, 118);
-        font-size: 3.125rem;
+        font-size: 2.8rem;
         margin-bottom: 20px;
         line-height: 60px;
         width: 66%;
         font-family: 'Roboto Mono', monospace;
         letter-spacing: 0;
+        word-spacing: -20px;
     }
 
 
@@ -48,5 +49,9 @@ export const Hero = styled.section`
 
     @media (max-width: 480px){
         p:last-of-type{width: 100%;}
+    }
+
+    @media (max-width: 400px){
+        width: 90%;
     }
 `
