@@ -8,7 +8,7 @@ function ProjectTest({websiteName, websiteDesc, websiteImg, techArray, side, fir
     let rows = [];
 
     for(let i = 0; i < techArray.length; i++){
-        rows.push(<li key={i}><img src={ArrowIcon} alt="Arrow icon"/>{techArray[i]}</li>)
+        rows.push(<li style={{ height: 20}} key={i}><img src={ArrowIcon} alt="Arrow icon"/>{techArray[i]}</li>)
     }; 
 
     return rows;

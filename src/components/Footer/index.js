@@ -11,10 +11,10 @@ function FooterComp() {
             <p>LeCode - lecode@gmail.com</p>
 
             <ul>
-                <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src={GitIcon} alt="Git icon"/></a></li>
-                <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><img src={LinkedinIcon} alt="Linkedin icon"/></a></li>
-                <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt="Instagram icon"/></a></li>
-                <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt="Twitter icon"/></a></li>
+                <li><a href="https://github.com/lecode-dev" target="_blank" rel="noopener noreferrer"><img src={GitIcon} alt="Git icon"/></a></li>
+                <li><a href="https://www.linkedin.com/company/lecodedev/" target="_blank" rel="noopener noreferrer"><img src={LinkedinIcon} alt="Linkedin icon"/></a></li>
+                <li><a href="https://www.instagram.com/lecode_dev/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt="Instagram icon"/></a></li>
+                <li><a href="https://twitter.com/lecodedev" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt="Twitter icon"/></a></li>
             </ul>
         </Footer>
     )

@@ -39,7 +39,7 @@ export const Members = styled.div`
     width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-align: center;
     padding: 2%;
     color: #fff;
@@ -51,10 +51,11 @@ export const Members = styled.div`
         border: 1px solid rgb(0, 179, 118);
     }
 
-    :hover span{color: rgb(231, 76, 60);}
+    span{color: rgb(231, 76, 60);}
 
     .memberImg{
         width: 90%;
+        border-radius: 5px;
         height: 180px;
         margin: 0 auto 20px auto;
         filter: grayscale(1);
@@ -66,6 +67,7 @@ export const Members = styled.div`
     .info{
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
 
         .title{
             display: flex;
@@ -86,7 +88,7 @@ export const Members = styled.div`
             }
         }
     
-        p{margin: 25px 0;}
+        p{margin: 25px 0; height: 200px;}
     
         .logos{
             display: flex;

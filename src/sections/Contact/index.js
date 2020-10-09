@@ -17,7 +17,7 @@ function ContactSession() {
 
                 <Paragraph>Our experience and knowledge can dramatically speed up the development of your project and idea. We are really excited to work with you. Let's make our fantastic software together!!!</Paragraph>
 
-                <a href="mailto:lecode.dev@gmail.com?subject=Job Contact">
+                <a href="mailto:dev.lecode@gmail.com?subject=Job Contact">
                     <Button title="Say Hello to Us"/>
                 </a>
             </div>
