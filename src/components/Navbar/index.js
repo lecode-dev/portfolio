@@ -23,12 +23,12 @@ function Navbar() {
 
   const showNav = () => {
     document.querySelector('nav').style.display = 'flex';
-    document.querySelector('body').style.position = 'fixed';
+    document.querySelector('body').style.overflow = 'hidden';
   }
 
   const hideNav = () => {
     document.querySelector('nav').style.display = 'none';
-    document.querySelector('body').style.position = 'relative';
+    document.querySelector('body').style.overflow = 'scroll';
   }
 
   return (
