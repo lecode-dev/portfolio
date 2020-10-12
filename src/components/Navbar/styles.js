@@ -50,6 +50,7 @@ export const Container = styled.header`
     }
   }
 
+  //Media Queries
   @media(max-width: 768px){
     .menu-icon{
       display: block;

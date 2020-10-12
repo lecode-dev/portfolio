@@ -130,10 +130,6 @@ export const Project = styled.div`
         margin: 0 auto;
     }
 
-    // div:first-of-type{
-    //   margin-top: 0;
-    // }
-
     div{
       text-align: left;
       height: 300px;
