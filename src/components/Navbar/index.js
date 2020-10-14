@@ -11,11 +11,11 @@ function Navbar() {
   window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-    document.getElementById("menu").style.top = "0";
-    document.getElementById("menu").style.transition = "all .3s";
+      document.getElementById("menu").style.top = "0";
+      document.getElementById("menu").style.transition = "all .3s";
     } else {
-    document.getElementById("menu").style.transition = "all .3s";
-    document.getElementById("menu").style.top = "-100px";
+      document.getElementById("menu").style.transition = "all .3s";
+      document.getElementById("menu").style.top = "-100px";
     }
 
   prevScrollpos = currentScrollPos;
@@ -34,7 +34,7 @@ function Navbar() {
   return (
     <Container id="menu">
       <Link to="hero" duration={1000} offset={-60} smooth>
-        <img src={Logo} alt="Logo"/>
+        <img src={Logo} alt="LeCode Logo"/>
       </Link>
 
       <img className="menu-icon" src={MenuIcon} alt="Menu icon" onClick={showNav}/>

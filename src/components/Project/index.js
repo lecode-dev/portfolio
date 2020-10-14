@@ -16,7 +16,7 @@ function ProjectTest({websiteName, websiteDesc, websiteImg, techArray, side, fir
 
   return (
       <Project side={side} firstElement={firstElement}>
-        <img src={websiteImg} alt="Project 1"/>
+        <img src={websiteImg} alt="Web Development Project"/>
 
         <div>
           <span>Featured Project</span>

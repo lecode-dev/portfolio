@@ -113,6 +113,12 @@ export const Project = styled.div`
 
 
   // Media Queries
+  @media(min-width: 1600px){
+    & > img: first-child{
+      width: 47%;
+    }
+  }
+
   @media (max-width: 950px){
     & > img: first-child{
       width: 50%;

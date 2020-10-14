@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button } from './styles';
-import { SmallButton } from './styles';
+import { Button, SmallButton } from './styles';
 
 function CustomButton({ onClick, title }) {
   return ( 

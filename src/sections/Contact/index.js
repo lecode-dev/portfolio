@@ -23,7 +23,7 @@ function ContactSession() {
             </div>
 
             <div className="div-right">
-                <img src={ContactImg} alt="Web Devolopment" className="contact-img"/>
+                <img src={ContactImg} alt="Web Devolopment Code" className="contact-img"/>
             </div>  
 
         </Contact>
