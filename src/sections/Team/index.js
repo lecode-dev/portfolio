@@ -1,104 +1,67 @@
 import React from 'react';
 import { Team } from './styles';
-import { Members } from './styles';
-import { SessionTitle } from '../ReusableStyling/styles';
+import { SessionTitle } from '../Shared/styles';
+import Member from '../../components/Member';
 import Member1 from '../../assets/images/member1.jpg';
 import Member2 from '../../assets/images/member2.jpg';
 import Member3 from '../../assets/images/member3.jpg';
-import Member4 from '../../assets/images/member4.jpg';
-import InstagramLogo from '../../assets/images/instagram-logo.svg';
-import TwitterLogo from '../../assets/images/twitter-logo.svg';
-import LinkedinLogo from '../../assets/images/linkedin-logo.svg';
-import GithubLogo from '../../assets/images/github-logo.svg';
+import Member4 from '../../assets/images/member5.jpg';
 
 function TeamSession() {
-  const member = (
-    memberImg,
-    memberName,
-    job,
-    txt,
-    instagramLink,
-    twitterLink,
-    linkedinLink,
-    githubLink
-  ) => (
-    <Members>
-      <img className="memberImg" alt="" src={memberImg} />
+    const memberInfo = [
+        {
+            img: Member1,
+            name: 'Emerson Lopes',
+            job: 'Full-stack Developer',
+            desc: "I am a software developer based in Montes Claros, MG, Brazil specializing in building (and occasionally designing) exceptional, high-quality websites and applications. I'm currently studying Information Systems at the State University of Montes Claros",
+            instagram: 'https://www.instagram.com/emersonlopxs',
+            twitter: 'https://twitter.com/emersonlopxs',
+            linkedin: 'https://br.linkedin.com/emersonlopxs',
+            github: 'https://github.com/emersonlopxs'
+        },
+        {
+            img: Member2,
+            name: 'Erick William',
+            job: 'Back-end Developer',
+            desc: 'I am a developer who has the determination and competence to deliver high quality projects. I enjoy working as a team because it gives me the opportunity to get different perspectives on my work and learn about new things.',
+            instagram: 'https://www.instagram.com/',
+            twitter: 'https://twitter.com/',
+            linkedin: 'https://www.linkedin.com/in/erick-willian-8553a2133/',
+            github: 'https://github.com/'
+        },
+        {
+            img: Member3,
+            name: 'Lucas Filipe',
+            job: 'Front-end Developer',
+            desc: 'I am Computer Science student with experience in front-end programming, with the objective of growing professionally and productively, valuing high standards of morality and interpersonal coexistence.',
+            instagram: 'https://www.instagram.com/',
+            twitter: 'https://twitter.com/',
+            linkedin: 'https://www.linkedin.com/',
+            github: 'https://github.com/'
+        },
+        {
+            img: Member4,
+            name: 'Marianne Matos',
+            job: 'Front-end Developer',
+            desc: 'I’m a web developer, who speaks English, Portuguese and a little bit of French and is studying Information Systems at the State University of Montes Claros. Basically, I’m just someone who really loves technology and learning new things :)',
+            instagram: 'https://www.instagram.com/mari_anne212',
+            twitter: 'https://twitter.com/',
+            linkedin: 'https://www.linkedin.com/',
+            github: 'https://github.com/MariMatos2112'
+        }
+    ]
 
-      <div className="title">
-        <h4>{memberName}</h4>
-        <span>{job}</span>
-      </div>
+    return(
+        <Team id="team">
+            <SessionTitle><span>0011.</span>Get to Know Us</SessionTitle>
 
-      <p>{txt}</p>
-
-      <div className="logos">
-        <a href={instagramLink} target="_blank" rel="noopener noreferrer">
-          <img src={InstagramLogo} alt="Instagram Logo" />
-        </a>
-        <a href={twitterLink} target="_blank" rel="noopener noreferrer">
-          <img src={TwitterLogo} alt="Twitter Logo" />
-        </a>
-        <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-          <img src={LinkedinLogo} alt="Linkedin Logo" />
-        </a>
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <img src={GithubLogo} alt="Github Logo" />
-        </a>
-      </div>
-    </Members>
-  );
-
-  return (
-    <Team>
-      <SessionTitle>
-        <span>0011.</span> Get to Know Us
-      </SessionTitle>
-
-      <div>
-        {member(
-          Member1,
-          'Emerson Lopes',
-          'Front End Developer',
-          'You can relay on our amazing features list and also our customer services will be great experience.',
-          'https://www.instagram.com/',
-          'https://twitter.com/',
-          'https://br.linkedin.com/',
-          'https://github.com/'
-        )}
-        {member(
-          Member2,
-          'Erick William',
-          'Back End Developer',
-          'You can relay on our amazing features list and also our customer services will be great experience.',
-          'https://www.instagram.com/',
-          'https://twitter.com/',
-          'https://br.linkedin.com/',
-          'https://github.com/'
-        )}
-        {member(
-          Member3,
-          'Lucas Lucas',
-          'Front End Developer',
-          'You can relay on our amazing features list and also our customer services will be great experience.',
-          'https://www.instagram.com/',
-          'https://twitter.com/',
-          'https://br.linkedin.com/',
-          'https://github.com/'
-        )}
-        {member(
-          Member4,
-          'Marianne Matos',
-          'Front End Developer',
-          'You can relay on our amazing features list and also our customer services will be great experience.',
-          'https://www.instagram.com/',
-          'https://twitter.com/',
-          'https://br.linkedin.com/',
-          'https://github.com/'
-        )}
-      </div>
-    </Team>
-  );
+            <div>
+                {memberInfo.map(member => (
+                    <Member img={member.img} name={member.name} job={member.job} txt={member.desc} instagramLink={member.instagram} twitterLink={member.twitter} linkedinLink={member.linkedin} githubLink={member.github}/>
+                ))}
+            </div>
+        </Team>
+    )
 }
 
 export default TeamSession;

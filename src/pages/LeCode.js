@@ -3,8 +3,9 @@ import Navbar from '../components/Navbar';
 import Hero from '../sections/Hero';
 import About from '../sections/About';
 import Contact from '../sections/Contact';
-import Projets from '../sections/Projects'
+import Projects from '../sections/Projects'
 import Team from '../sections/Team';
+import Footer from '../components/Footer';
 
 function LeCode() {
   return (
@@ -12,9 +13,10 @@ function LeCode() {
       <Navbar />
       <Hero />
       <About />
-      <Projets />
+      <Projects />
       <Team />
       <Contact />
+      <Footer />
     </>
   );
 }

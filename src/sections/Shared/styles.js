@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SessionTitle = styled.h2`
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 30px;
     font-family: 'Roboto Mono', monospace;
@@ -35,7 +35,7 @@ export const SessionTitle = styled.h2`
     span{
         color: rgb(231, 76, 60);
         font-family: 'Roboto Mono', monospace;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 300;
     }
 `
@@ -43,17 +43,17 @@ export const SessionTitle = styled.h2`
 export const Paragraph = styled.p`
     line-height: 30px;
     margin-bottom: 20px;
-    text-align: justify;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
 
-    button, a{
+    button, a, Link{
         color: rgb(0, 179, 118);
         transition: all .2s;
         position: relative;
         font-family: 'Roboto Mono', monospace;
         background-color: transparent;
-        font-size: 16px;
+        font-size: 1rem;
+        cursor: pointer;
 
         :hover:before{
             visibility: visible;
@@ -78,7 +78,7 @@ export const Paragraph = styled.p`
     }
 
     span{
-        font-size: 18px;
+        font-size: 1.125rem;
         margin: 0;
         font-weight: normal;
         color: rgb(0, 179, 118);

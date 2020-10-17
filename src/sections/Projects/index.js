@@ -1,25 +1,39 @@
 import React from 'react';
 import { Projects } from './styles';
-import ProjRight from '../../components/ProjectInfo';
-import { ProjLeft } from '../../components/ProjectInfo';
-import { SessionTitle } from '../ReusableStyling/styles';
-import Proj1 from '../../assets/images/proj1.jpg';
-import Proj2 from '../../assets/images/proj5.jpg';
-import Proj3 from '../../assets/images/proj3.jpg';
-import Proj4 from '../../assets/images/proj4.jpg';
+import Project from '../../components/Project';
+import { SessionTitle } from '../Shared/styles';
+import Proj1 from '../../assets/images/proj1.png';
+import Proj2 from '../../assets/images/proj2.png';
 
 function ProjectsSession() {
+    const siteProps = [
+        {
+            name: 'Camalẽao LAB',
+            desc: 'The Streetwear style was never just about clothes. It’s about identity, culture and freedom of expression. The future is already here. It’s time to adapt.',
+            img: Proj1,
+            technologies: ['PostgreSQL', 'Node.js', 'React'],
+            side: 'right',
+            firstElement: true,
+            link: 'https://camaleaolab.com/'
+        },
+        {
+            name: 'SwiftSku',
+            desc: 'SwiftSku helps independent c-store owners onboard their c-store with the latest technology to leverage promotional discounts and increase revenue with SABI.',
+            img: Proj2,
+            technologies: ['React', 'Next.js'],
+            side: 'left',
+            firstElement: false,
+            link: 'https://swiftsku-website-v3-git-development.swiftsku.vercel.app/'
+        }
+    ]
+
     return (
-        <Projects>
-            <SessionTitle><span>0010.</span>Some Of Our Projects</SessionTitle>
+        <Projects id="projects">
+            <SessionTitle><span>0010.</span>Some of our projects</SessionTitle>
 
-            <ProjRight websiteName="Sport FIT Gym" websiteDesc="With Sport FIT you can schedule sessions of sports, such as Pilates, Yoga, Spinning and many more." websiteImg={Proj1} techArray={['HTML', 'CSS', 'React', 'Node.js']} websiteNumber="website1"/>
-
-            <ProjLeft websiteName="Fables Consulting Service" websiteDesc="Access the Fables website to get access to great quality consulting service for any kind of bussiness." websiteImg={Proj2} techArray={['React', 'PostgreSQL', 'SCSS']}/> 
-
-            <ProjRight websiteName="Fab Fashion" websiteDesc="In Fab Fashion you can find a lot of different clothes collections, including the latest fashion trends." websiteImg={Proj3} techArray={['HTML', 'CSS', 'AWS', 'SCSS']} websiteNumber="website3"/>
-
-            <ProjLeft websiteName="My Home" websiteDesc="Here you have a large variaty of places to rent while you're traveling, including big houses, apartments, among others." websiteImg={Proj4} techArray={['React', 'Firebase', 'CSS']}/>                        
+            {siteProps.map(site => (
+                <Project websiteName={site.name} websiteDesc={site.desc} websiteImg={site.img} techArray={site.technologies} side={site.side} firstElement={site.firstElement} websiteLink={site.link}/>
+            ))}
         </Projects>
     )
 }

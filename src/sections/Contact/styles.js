@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 export const Contact = styled.section`
-    height: 100vh;
     width: 80%;
-    margin: 4% auto 0 auto;
+    margin: 0 auto;
     padding: 4.5% 0;
     color: white;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(0, 179, 118);
+    border-top: 1px solid rgb(0, 179, 118);
 
     .div-left{width: 50%;}
     
@@ -35,5 +34,21 @@ export const Contact = styled.section`
                 border-bottom: 1px solid rgb(0, 179, 118);
             }
         }
+    }
+
+
+    // Media Queries
+    @media (max-width: 769px){
+        .div-left{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .div-right{display: none;}
+    }
+
+    @media (max-width: 400px){
+        width: 90%;
     }
 `

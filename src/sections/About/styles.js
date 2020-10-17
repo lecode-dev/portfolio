@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const About = styled.section`
-    height: 100vh;
     width: 80%;
-    margin: 4% auto 0 auto;
+    margin: 0 auto;
     padding: 4.5% 0;
     color: white;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(0, 179, 118);
+    border-top: 1px solid rgb(0, 179, 118);
 
     .div-left{width: 50%;}
 
@@ -45,5 +44,35 @@ export const About = styled.section`
             opacity: 0;
             transition: all .2s;
         }
+    }
+
+
+    // Media Queries
+    @media (max-width: 1024px){
+        .div-left{width: 100%;}
+
+        .div-right{display: none;}
+
+        h2{font-size: 1.8rem;}
+
+        p{line-height: 27px;}
+    }
+
+    @media (max-width: 769px){
+        h2{margin-top: 30px;}
+
+        .tech-list{margin-bottom: 30px};
+    }
+
+    @media (max-width: 580px){
+        .tech-list{width: 90%;}
+    }
+
+    @media (max-width: 400px){
+        width: 90%;
+    }
+
+    @media (max-width: 360px){
+        .tech-list{width: 110%;}
     }
 `
