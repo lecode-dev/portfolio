@@ -17,7 +17,8 @@ function TeamSession() {
       instagram: "https://www.instagram.com/emersonlopxs",
       twitter: "https://twitter.com/emersonlopxs",
       linkedin: "https://br.linkedin.com/emersonlopxs",
-      github: "https://github.com/emersonlopxs"
+      github: "https://github.com/emersonlopxs",
+      upwork: "https://www.upwork.com/freelancers/~01a17ee21ec1f97f8c"
     },
     {
       img: Member2,
@@ -28,7 +29,8 @@ function TeamSession() {
       instagram: "https://www.instagram.com/erick_willian_/",
       twitter: "https://twitter.com/Erickinhou1",
       linkedin: "https://www.linkedin.com/in/erick-willian-8553a2133/",
-      github: "https://github.com/Erickinhou"
+      github: "https://github.com/Erickinhou",
+      upwork: "https://www.upwork.com/freelancers/~017afca97b2a5e3d19"
     },
     {
       img: Member3,
@@ -39,7 +41,8 @@ function TeamSession() {
       instagram: "https://www.instagram.com/lucasfilipess/",
       twitter: "https://twitter.com/",
       linkedin: "https://www.linkedin.com/in/lucas-souza-95b867174/",
-      github: "https://github.com/lucasfilipess"
+      github: "https://github.com/lucasfilipess",
+      upwork: "https://www.upwork.com/freelancers/~01b27157790dd28700"
     }
   ];
 
@@ -60,6 +63,7 @@ function TeamSession() {
             twitterLink={member.twitter}
             linkedinLink={member.linkedin}
             githubLink={member.github}
+            upworkLink={member.upwork}
           />
         ))}
       </div>

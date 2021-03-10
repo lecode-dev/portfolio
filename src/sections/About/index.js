@@ -29,9 +29,9 @@ function AboutSession() {
         </SessionTitle>
 
         <Paragraph>
-          Hey!!! We are four friends (
+          Hey!!! We are three friends (
           <a
-            href="https://br.linkedin.com/emersonlopxs"
+            href="https://www.upwork.com/freelancers/~01a17ee21ec1f97f8c"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -39,7 +39,7 @@ function AboutSession() {
           </a>
           ,{" "}
           <a
-            href="https://www.linkedin.com/in/erick-willian-8553a2133/"
+            href="https://www.upwork.com/freelancers/~017afca97b2a5e3d19"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -47,7 +47,7 @@ function AboutSession() {
           </a>
           ,{" "}
           <a
-            href="https://www.linkedin.com/in/lucas-souza-95b867174/"
+            href="https://www.upwork.com/freelancers/~01b27157790dd28700"
             target="_blank"
             rel="noopener noreferrer"
           >
